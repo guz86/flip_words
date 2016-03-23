@@ -1,6 +1,6 @@
 # reverse
 
-a = gets.strip # = 'las123'
+a = '' # = gets.strip
 
  puts a.reverse
 
@@ -23,3 +23,7 @@ s = ''
 (n).downto(0) do |i| 
 	s << a[i]
 end
+
+#еще вариант из урока перевернуть слова в предложении
+a = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit'
+puts a.split(/ /).reverse.join(' ').inspect
